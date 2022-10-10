@@ -1,0 +1,54 @@
+# Shipibo-Konibo
+
+python3 evaluator.py --language shi --task-name random_teacher_general --sentences-errors-file shi.teacher_general_no_errors.test.sentences.txt --sentences-file shi.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language shi --task-name keyprox_teacher_general --sentences-errors-file shi.teacher_general_no_errors.test.sentences.txt --sentences-file shi.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_teacher_general --sentences-errors-file shi.teacher_general_no_errors.test.sentences.txt --sentences-file shi.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language shi --task-name sylsim_teacher_general --sentences-errors-file shi.teacher_general_no_errors.test.sentences.txt --sentences-file shi.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_general_no_errors.test.sentences.txt --sentences-file shi.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_unnorm_teacher_general --sentences-errors-file shi.teacher_general_no_errors.test.sentences.txt --sentences-file shi.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language shi --task-name all_teacher_general --sentences-errors-file shi.teacher_general_no_errors.test.sentences.txt --sentences-file shi.teacher_general_no_errors.test.sentences.txt
+python3 ensemble.py --language shi --test-sentences-errors-file shi.teacher_general_no_errors.test.sentences.txt --test-sentences-file shi.teacher_general_no_errors.test.sentences.txt
+
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_general_no_errors.test.sentences.txt --sentences-file shi.teacher_general_no_errors.test.sentences.txt
+
+
+# Asháninka
+
+python3 evaluator.py --language ash --task-name random_teacher_general --sentences-errors-file ash.teacher_general_no_errors.test.sentences.txt --sentences-file ash.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ash --task-name keyprox_teacher_general --sentences-errors-file ash.teacher_general_no_errors.test.sentences.txt --sentences-file ash.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ash --task-name phongrafamb_teacher_general --sentences-errors-file ash.teacher_general_no_errors.test.sentences.txt --sentences-file ash.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ash --task-name sylsim_teacher_general --sentences-errors-file ash.teacher_general_no_errors.test.sentences.txt --sentences-file ash.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_general_no_errors.test.sentences.txt --sentences-file ash.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ash --task-name phongrafamb_unnorm_teacher_general --sentences-errors-file ash.teacher_general_no_errors.test.sentences.txt --sentences-file ash.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ash --task-name all_teacher_general --sentences-errors-file ash.teacher_general_no_errors.test.sentences.txt --sentences-file ash.teacher_general_no_errors.test.sentences.txt
+python3 ensemble.py --language ash --test-sentences-errors-file ash.teacher_general_no_errors.test.sentences.txt --test-sentences-file ash.teacher_general_no_errors.test.sentences.txt
+
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_general_no_errors.test.sentences.txt --sentences-file ash.teacher_general_no_errors.test.sentences.txt
+
+
+# Yanesha
+
+python3 evaluator.py --language ya --task-name random_teacher_general --sentences-errors-file ya.teacher_general_no_errors.test.sentences.txt --sentences-file ya.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ya --task-name keyprox_teacher_general --sentences-errors-file ya.teacher_general_no_errors.test.sentences.txt --sentences-file ya.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ya --task-name phongrafamb_teacher_general --sentences-errors-file ya.teacher_general_no_errors.test.sentences.txt --sentences-file ya.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ya --task-name sylsim_teacher_general --sentences-errors-file ya.teacher_general_no_errors.test.sentences.txt --sentences-file ya.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_general_no_errors.test.sentences.txt --sentences-file ya.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ya --task-name phongrafamb_unnorm_teacher_general --sentences-errors-file ya.teacher_general_no_errors.test.sentences.txt --sentences-file ya.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language ya --task-name all_teacher_general --sentences-errors-file ya.teacher_general_no_errors.test.sentences.txt --sentences-file ya.teacher_general_no_errors.test.sentences.txt
+python3 ensemble.py --language ya --test-sentences-errors-file ya.teacher_general_no_errors.test.sentences.txt --test-sentences-file ya.teacher_general_no_errors.test.sentences.txt
+
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_general_no_errors.test.sentences.txt --sentences-file ya.teacher_general_no_errors.test.sentences.txt
+
+
+# Yine
+
+python3 evaluator.py --language yi --task-name random_teacher_general --sentences-errors-file yi.teacher_general_no_errors.test.sentences.txt --sentences-file yi.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language yi --task-name keyprox_teacher_general --sentences-errors-file yi.teacher_general_no_errors.test.sentences.txt --sentences-file yi.teacher_general_no_errors.test.sentences.txt
+# python3 evaluator.py --language yi --task-name phongrafamb_teacher_general --sentences-errors-file yi.teacher_general_no_errors.test.sentences.txt --sentences-file yi.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language yi --task-name sylsim_teacher_general --sentences-errors-file yi.teacher_general_no_errors.test.sentences.txt --sentences-file yi.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_general_no_errors.test.sentences.txt --sentences-file yi.teacher_general_no_errors.test.sentences.txt
+# python3 evaluator.py --language yi --task-name phongrafamb_unnorm_teacher_general --sentences-errors-file yi.teacher_general_no_errors.test.sentences.txt --sentences-file yi.teacher_general_no_errors.test.sentences.txt
+python3 evaluator.py --language yi --task-name all_teacher_general --sentences-errors-file yi.teacher_general_no_errors.test.sentences.txt --sentences-file yi.teacher_general_no_errors.test.sentences.txt
+python3 ensemble.py --language yi --test-sentences-errors-file yi.teacher_general_no_errors.test.sentences.txt --test-sentences-file yi.teacher_general_no_errors.test.sentences.txt
+
+python3 chrF_evaluator.py --sentences-errors-file yi.teacher_general_no_errors.test.sentences.txt --sentences-file yi.teacher_general_no_errors.test.sentences.txt

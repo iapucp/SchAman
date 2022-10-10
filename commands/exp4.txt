@@ -1,0 +1,198 @@
+# Shipibo-Konibo
+
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_fon.test.sentences.errors.txt --sentences-file shi.teacher_fon.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_gen.test.sentences.errors.txt --sentences-file shi.teacher_gen.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_tie.test.sentences.errors.txt --sentences-file shi.teacher_tie.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_num.test.sentences.errors.txt --sentences-file shi.teacher_num.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_pun.test.sentences.errors.txt --sentences-file shi.teacher_pun.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_ace.test.sentences.errors.txt --sentences-file shi.teacher_ace.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_sin.test.sentences.errors.txt --sentences-file shi.teacher_sin.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_sem.test.sentences.errors.txt --sentences-file shi.teacher_sem.test.sentences.txt
+
+python3 generate_output.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_fon.test.sentences.errors.txt --sentences-predictions-file shi.teacher_fon.test.sentences.predictions.txt
+python3 generate_output.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_gen.test.sentences.errors.txt --sentences-predictions-file shi.teacher_gen.test.sentences.predictions.txt
+python3 generate_output.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_tie.test.sentences.errors.txt --sentences-predictions-file shi.teacher_tie.test.sentences.predictions.txt
+python3 generate_output.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_num.test.sentences.errors.txt --sentences-predictions-file shi.teacher_num.test.sentences.predictions.txt
+python3 generate_output.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_pun.test.sentences.errors.txt --sentences-predictions-file shi.teacher_pun.test.sentences.predictions.txt
+python3 generate_output.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_ace.test.sentences.errors.txt --sentences-predictions-file shi.teacher_ace.test.sentences.predictions.txt
+python3 generate_output.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_sin.test.sentences.errors.txt --sentences-predictions-file shi.teacher_sin.test.sentences.predictions.txt
+python3 generate_output.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_sem.test.sentences.errors.txt --sentences-predictions-file shi.teacher_sem.test.sentences.predictions.txt
+
+
+python3 ensemble.py --language shi --test-sentences-errors-file shi.teacher_fon.test.sentences.errors.txt --test-sentences-file shi.teacher_fon.test.sentences.txt
+python3 ensemble.py --language shi --test-sentences-errors-file shi.teacher_gen.test.sentences.errors.txt --test-sentences-file shi.teacher_gen.test.sentences.txt
+python3 ensemble.py --language shi --test-sentences-errors-file shi.teacher_tie.test.sentences.errors.txt --test-sentences-file shi.teacher_tie.test.sentences.txt
+python3 ensemble.py --language shi --test-sentences-errors-file shi.teacher_num.test.sentences.errors.txt --test-sentences-file shi.teacher_num.test.sentences.txt
+python3 ensemble.py --language shi --test-sentences-errors-file shi.teacher_pun.test.sentences.errors.txt --test-sentences-file shi.teacher_pun.test.sentences.txt
+python3 ensemble.py --language shi --test-sentences-errors-file shi.teacher_ace.test.sentences.errors.txt --test-sentences-file shi.teacher_ace.test.sentences.txt
+python3 ensemble.py --language shi --test-sentences-errors-file shi.teacher_sin.test.sentences.errors.txt --test-sentences-file shi.teacher_sin.test.sentences.txt
+python3 ensemble.py --language shi --test-sentences-errors-file shi.teacher_sem.test.sentences.errors.txt --test-sentences-file shi.teacher_sem.test.sentences.txt
+
+python3 generate_output_ensemble.py --language shi --sentences-errors-file shi.teacher_fon.test.sentences.errors.txt --sentences-predictions-file shi.teacher_fon_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language shi --sentences-errors-file shi.teacher_gen.test.sentences.errors.txt --sentences-predictions-file shi.teacher_gen_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language shi --sentences-errors-file shi.teacher_tie.test.sentences.errors.txt --sentences-predictions-file shi.teacher_tie_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language shi --sentences-errors-file shi.teacher_num.test.sentences.errors.txt --sentences-predictions-file shi.teacher_num_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language shi --sentences-errors-file shi.teacher_pun.test.sentences.errors.txt --sentences-predictions-file shi.teacher_pun_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language shi --sentences-errors-file shi.teacher_ace.test.sentences.errors.txt --sentences-predictions-file shi.teacher_ace_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language shi --sentences-errors-file shi.teacher_sin.test.sentences.errors.txt --sentences-predictions-file shi.teacher_sin_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language shi --sentences-errors-file shi.teacher_sem.test.sentences.errors.txt --sentences-predictions-file shi.teacher_sem_ensemble.test.sentences.predictions.txt
+
+
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_fon.test.sentences.errors.txt --sentences-file shi.teacher_fon.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_gen.test.sentences.errors.txt --sentences-file shi.teacher_gen.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_tie.test.sentences.errors.txt --sentences-file shi.teacher_tie.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_num.test.sentences.errors.txt --sentences-file shi.teacher_num.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_pun.test.sentences.errors.txt --sentences-file shi.teacher_pun.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_ace.test.sentences.errors.txt --sentences-file shi.teacher_ace.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_sin.test.sentences.errors.txt --sentences-file shi.teacher_sin.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_sem.test.sentences.errors.txt --sentences-file shi.teacher_sem.test.sentences.txt
+
+
+
+# Asháninka
+
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_fon.test.sentences.errors.txt --sentences-file ash.teacher_fon.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_gen.test.sentences.errors.txt --sentences-file ash.teacher_gen.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_tie.test.sentences.errors.txt --sentences-file ash.teacher_tie.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_num.test.sentences.errors.txt --sentences-file ash.teacher_num.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_pun.test.sentences.errors.txt --sentences-file ash.teacher_pun.test.sentences.txt
+# python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_ace.test.sentences.errors.txt --sentences-file ash.teacher_ace.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_sin.test.sentences.errors.txt --sentences-file ash.teacher_sin.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_sem.test.sentences.errors.txt --sentences-file ash.teacher_sem.test.sentences.txt
+
+python3 generate_output.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_fon.test.sentences.errors.txt --sentences-predictions-file ash.teacher_fon.test.sentences.predictions.txt
+python3 generate_output.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_gen.test.sentences.errors.txt --sentences-predictions-file ash.teacher_gen.test.sentences.predictions.txt
+python3 generate_output.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_tie.test.sentences.errors.txt --sentences-predictions-file ash.teacher_tie.test.sentences.predictions.txt
+python3 generate_output.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_num.test.sentences.errors.txt --sentences-predictions-file ash.teacher_num.test.sentences.predictions.txt
+python3 generate_output.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_pun.test.sentences.errors.txt --sentences-predictions-file ash.teacher_pun.test.sentences.predictions.txt
+# python3 generate_output.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_ace.test.sentences.errors.txt --sentences-predictions-file ash.teacher_ace.test.sentences.predictions.txt
+python3 generate_output.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_sin.test.sentences.errors.txt --sentences-predictions-file ash.teacher_sin.test.sentences.predictions.txt
+python3 generate_output.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_sem.test.sentences.errors.txt --sentences-predictions-file ash.teacher_sem.test.sentences.predictions.txt
+
+
+python3 ensemble.py --language ash --test-sentences-errors-file ash.teacher_fon.test.sentences.errors.txt --test-sentences-file ash.teacher_fon.test.sentences.txt
+python3 ensemble.py --language ash --test-sentences-errors-file ash.teacher_gen.test.sentences.errors.txt --test-sentences-file ash.teacher_gen.test.sentences.txt
+python3 ensemble.py --language ash --test-sentences-errors-file ash.teacher_tie.test.sentences.errors.txt --test-sentences-file ash.teacher_tie.test.sentences.txt
+python3 ensemble.py --language ash --test-sentences-errors-file ash.teacher_num.test.sentences.errors.txt --test-sentences-file ash.teacher_num.test.sentences.txt
+python3 ensemble.py --language ash --test-sentences-errors-file ash.teacher_pun.test.sentences.errors.txt --test-sentences-file ash.teacher_pun.test.sentences.txt
+# python3 ensemble.py --language ash --test-sentences-errors-file ash.teacher_ace.test.sentences.errors.txt --test-sentences-file ash.teacher_ace.test.sentences.txt
+python3 ensemble.py --language ash --test-sentences-errors-file ash.teacher_sin.test.sentences.errors.txt --test-sentences-file ash.teacher_sin.test.sentences.txt
+python3 ensemble.py --language ash --test-sentences-errors-file ash.teacher_sem.test.sentences.errors.txt --test-sentences-file ash.teacher_sem.test.sentences.txt
+
+python3 generate_output_ensemble.py --language ash --sentences-errors-file ash.teacher_fon.test.sentences.errors.txt --sentences-predictions-file ash.teacher_fon_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language ash --sentences-errors-file ash.teacher_gen.test.sentences.errors.txt --sentences-predictions-file ash.teacher_gen_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language ash --sentences-errors-file ash.teacher_tie.test.sentences.errors.txt --sentences-predictions-file ash.teacher_tie_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language ash --sentences-errors-file ash.teacher_num.test.sentences.errors.txt --sentences-predictions-file ash.teacher_num_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language ash --sentences-errors-file ash.teacher_pun.test.sentences.errors.txt --sentences-predictions-file ash.teacher_pun_ensemble.test.sentences.predictions.txt
+# python3 generate_output_ensemble.py --language ash --sentences-errors-file ash.teacher_ace.test.sentences.errors.txt --sentences-predictions-file ash.teacher_ace_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language ash --sentences-errors-file ash.teacher_sin.test.sentences.errors.txt --sentences-predictions-file ash.teacher_sin_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language ash --sentences-errors-file ash.teacher_sem.test.sentences.errors.txt --sentences-predictions-file ash.teacher_sem_ensemble.test.sentences.predictions.txt
+
+
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_fon.test.sentences.errors.txt --sentences-file ash.teacher_fon.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_gen.test.sentences.errors.txt --sentences-file ash.teacher_gen.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_tie.test.sentences.errors.txt --sentences-file ash.teacher_tie.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_num.test.sentences.errors.txt --sentences-file ash.teacher_num.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_pun.test.sentences.errors.txt --sentences-file ash.teacher_pun.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file ash.teacher_ace.test.sentences.errors.txt --sentences-file ash.teacher_ace.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_sin.test.sentences.errors.txt --sentences-file ash.teacher_sin.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_sem.test.sentences.errors.txt --sentences-file ash.teacher_sem.test.sentences.txt
+
+
+# Yanesha
+
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_fon.test.sentences.errors.txt --sentences-file ya.teacher_fon.test.sentences.txt
+# python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_gen.test.sentences.errors.txt --sentences-file ya.teacher_gen.test.sentences.txt
+# python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_tie.test.sentences.errors.txt --sentences-file ya.teacher_tie.test.sentences.txt
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_num.test.sentences.errors.txt --sentences-file ya.teacher_num.test.sentences.txt
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_pun.test.sentences.errors.txt --sentences-file ya.teacher_pun.test.sentences.txt
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_ace.test.sentences.errors.txt --sentences-file ya.teacher_ace.test.sentences.txt
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_sin.test.sentences.errors.txt --sentences-file ya.teacher_sin.test.sentences.txt
+# python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_sem.test.sentences.errors.txt --sentences-file ya.teacher_sem.test.sentences.txt
+
+python3 generate_output.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_fon.test.sentences.errors.txt --sentences-predictions-file ya.teacher_fon.test.sentences.predictions.txt
+# python3 generate_output.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_gen.test.sentences.errors.txt --sentences-predictions-file ya.teacher_gen.test.sentences.predictions.txt
+# python3 generate_output.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_tie.test.sentences.errors.txt --sentences-predictions-file ya.teacher_tie.test.sentences.predictions.txt
+python3 generate_output.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_num.test.sentences.errors.txt --sentences-predictions-file ya.teacher_num.test.sentences.predictions.txt
+python3 generate_output.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_pun.test.sentences.errors.txt --sentences-predictions-file ya.teacher_pun.test.sentences.predictions.txt
+python3 generate_output.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_ace.test.sentences.errors.txt --sentences-predictions-file ya.teacher_ace.test.sentences.predictions.txt
+python3 generate_output.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_sin.test.sentences.errors.txt --sentences-predictions-file ya.teacher_sin.test.sentences.predictions.txt
+# python3 generate_output.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_sem.test.sentences.errors.txt --sentences-predictions-file ya.teacher_sem.test.sentences.predictions.txt
+
+
+python3 ensemble.py --language ya --test-sentences-errors-file ya.teacher_fon.test.sentences.errors.txt --test-sentences-file ya.teacher_fon.test.sentences.txt
+# python3 ensemble.py --language ya --test-sentences-errors-file ya.teacher_gen.test.sentences.errors.txt --test-sentences-file ya.teacher_gen.test.sentences.txt
+# python3 ensemble.py --language ya --test-sentences-errors-file ya.teacher_tie.test.sentences.errors.txt --test-sentences-file ya.teacher_tie.test.sentences.txt
+python3 ensemble.py --language ya --test-sentences-errors-file ya.teacher_num.test.sentences.errors.txt --test-sentences-file ya.teacher_num.test.sentences.txt
+python3 ensemble.py --language ya --test-sentences-errors-file ya.teacher_pun.test.sentences.errors.txt --test-sentences-file ya.teacher_pun.test.sentences.txt
+python3 ensemble.py --language ya --test-sentences-errors-file ya.teacher_ace.test.sentences.errors.txt --test-sentences-file ya.teacher_ace.test.sentences.txt
+python3 ensemble.py --language ya --test-sentences-errors-file ya.teacher_sin.test.sentences.errors.txt --test-sentences-file ya.teacher_sin.test.sentences.txt
+# python3 ensemble.py --language ya --test-sentences-errors-file ya.teacher_sem.test.sentences.errors.txt --test-sentences-file ya.teacher_sem.test.sentences.txt
+
+python3 generate_output_ensemble.py --language ya --sentences-errors-file ya.teacher_fon.test.sentences.errors.txt --sentences-predictions-file ya.teacher_fon_ensemble.test.sentences.predictions.txt
+# python3 generate_output_ensemble.py --language ya --sentences-errors-file ya.teacher_gen.test.sentences.errors.txt --sentences-predictions-file ya.teacher_gen_ensemble.test.sentences.predictions.txt
+# python3 generate_output_ensemble.py --language ya --sentences-errors-file ya.teacher_tie.test.sentences.errors.txt --sentences-predictions-file ya.teacher_tie_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language ya --sentences-errors-file ya.teacher_num.test.sentences.errors.txt --sentences-predictions-file ya.teacher_num_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language ya --sentences-errors-file ya.teacher_pun.test.sentences.errors.txt --sentences-predictions-file ya.teacher_pun_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language ya --sentences-errors-file ya.teacher_ace.test.sentences.errors.txt --sentences-predictions-file ya.teacher_ace_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language ya --sentences-errors-file ya.teacher_sin.test.sentences.errors.txt --sentences-predictions-file ya.teacher_sin_ensemble.test.sentences.predictions.txt
+# python3 generate_output_ensemble.py --language ya --sentences-errors-file ya.teacher_sem.test.sentences.errors.txt --sentences-predictions-file ya.teacher_sem_ensemble.test.sentences.predictions.txt
+
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_fon.test.sentences.errors.txt --sentences-file ya.teacher_fon.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file ya.teacher_gen.test.sentences.errors.txt --sentences-file ya.teacher_gen.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file ya.teacher_tie.test.sentences.errors.txt --sentences-file ya.teacher_tie.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_num.test.sentences.errors.txt --sentences-file ya.teacher_num.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_pun.test.sentences.errors.txt --sentences-file ya.teacher_pun.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_ace.test.sentences.errors.txt --sentences-file ya.teacher_ace.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_sin.test.sentences.errors.txt --sentences-file ya.teacher_sin.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file ya.teacher_sem.test.sentences.errors.txt --sentences-file ya.teacher_sem.test.sentences.txt
+
+
+
+# Yine
+
+python3 evaluator.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_fon.test.sentences.errors.txt --sentences-file yi.teacher_fon.test.sentences.txt
+python3 evaluator.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_gen.test.sentences.errors.txt --sentences-file yi.teacher_gen.test.sentences.txt
+# python3 evaluator.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_tie.test.sentences.errors.txt --sentences-file yi.teacher_tie.test.sentences.txt
+python3 evaluator.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_num.test.sentences.errors.txt --sentences-file yi.teacher_num.test.sentences.txt
+# python3 evaluator.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_pun.test.sentences.errors.txt --sentences-file yi.teacher_pun.test.sentences.txt
+# python3 evaluator.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_ace.test.sentences.errors.txt --sentences-file yi.teacher_ace.test.sentences.txt
+python3 evaluator.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_sin.test.sentences.errors.txt --sentences-file yi.teacher_sin.test.sentences.txt
+# python3 evaluator.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_sem.test.sentences.errors.txt --sentences-file yi.teacher_sem.test.sentences.txt
+
+python3 generate_output.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_fon.test.sentences.errors.txt --sentences-predictions-file yi.teacher_fon.test.sentences.predictions.txt
+python3 generate_output.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_gen.test.sentences.errors.txt --sentences-predictions-file yi.teacher_gen.test.sentences.predictions.txt
+# python3 generate_output.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_tie.test.sentences.errors.txt --sentences-predictions-file yi.teacher_tie.test.sentences.predictions.txt
+python3 generate_output.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_num.test.sentences.errors.txt --sentences-predictions-file yi.teacher_num.test.sentences.predictions.txt
+# python3 generate_output.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_pun.test.sentences.errors.txt --sentences-predictions-file yi.teacher_pun.test.sentences.predictions.txt
+# python3 generate_output.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_ace.test.sentences.errors.txt --sentences-predictions-file yi.teacher_ace.test.sentences.predictions.txt
+python3 generate_output.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_sin.test.sentences.errors.txt --sentences-predictions-file yi.teacher_sin.test.sentences.predictions.txt
+# python3 generate_output.py --language yi --task-name unnorm_teacher_general --sentences-errors-file yi.teacher_sem.test.sentences.errors.txt --sentences-predictions-file yi.teacher_sem.test.sentences.predictions.txt
+
+
+python3 ensemble.py --language yi --test-sentences-errors-file yi.teacher_fon.test.sentences.errors.txt --test-sentences-file yi.teacher_fon.test.sentences.txt
+python3 ensemble.py --language yi --test-sentences-errors-file yi.teacher_gen.test.sentences.errors.txt --test-sentences-file yi.teacher_gen.test.sentences.txt
+# python3 ensemble.py --language yi --test-sentences-errors-file yi.teacher_tie.test.sentences.errors.txt --test-sentences-file yi.teacher_tie.test.sentences.txt
+python3 ensemble.py --language yi --test-sentences-errors-file yi.teacher_num.test.sentences.errors.txt --test-sentences-file yi.teacher_num.test.sentences.txt
+# python3 ensemble.py --language yi --test-sentences-errors-file yi.teacher_pun.test.sentences.errors.txt --test-sentences-file yi.teacher_pun.test.sentences.txt
+# python3 ensemble.py --language yi --test-sentences-errors-file yi.teacher_ace.test.sentences.errors.txt --test-sentences-file yi.teacher_ace.test.sentences.txt
+python3 ensemble.py --language yi --test-sentences-errors-file yi.teacher_sin.test.sentences.errors.txt --test-sentences-file yi.teacher_sin.test.sentences.txt
+# python3 ensemble.py --language yi --test-sentences-errors-file yi.teacher_sem.test.sentences.errors.txt --test-sentences-file yi.teacher_sem.test.sentences.txt
+
+python3 generate_output_ensemble.py --language yi --sentences-errors-file yi.teacher_fon.test.sentences.errors.txt --sentences-predictions-file yi.teacher_fon_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language yi --sentences-errors-file yi.teacher_gen.test.sentences.errors.txt --sentences-predictions-file yi.teacher_gen_ensemble.test.sentences.predictions.txt
+# python3 generate_output_ensemble.py --language yi --sentences-errors-file yi.teacher_tie.test.sentences.errors.txt --sentences-predictions-file yi.teacher_tie_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language yi --sentences-errors-file yi.teacher_num.test.sentences.errors.txt --sentences-predictions-file yi.teacher_num_ensemble.test.sentences.predictions.txt
+# python3 generate_output_ensemble.py --language yi --sentences-errors-file yi.teacher_pun.test.sentences.errors.txt --sentences-predictions-file yi.teacher_pun_ensemble.test.sentences.predictions.txt
+# python3 generate_output_ensemble.py --language yi --sentences-errors-file yi.teacher_ace.test.sentences.errors.txt --sentences-predictions-file yi.teacher_ace_ensemble.test.sentences.predictions.txt
+python3 generate_output_ensemble.py --language yi --sentences-errors-file yi.teacher_sin.test.sentences.errors.txt --sentences-predictions-file yi.teacher_sin_ensemble.test.sentences.predictions.txt
+# python3 generate_output_ensemble.py --language yi --sentences-errors-file yi.teacher_sem.test.sentences.errors.txt --sentences-predictions-file yi.teacher_sem_ensemble.test.sentences.predictions.txt
+
+python3 chrF_evaluator.py --sentences-errors-file yi.teacher_fon.test.sentences.errors.txt --sentences-file yi.teacher_fon.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file yi.teacher_gen.test.sentences.errors.txt --sentences-file yi.teacher_gen.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file yi.teacher_tie.test.sentences.errors.txt --sentences-file yi.teacher_tie.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file yi.teacher_num.test.sentences.errors.txt --sentences-file yi.teacher_num.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file yi.teacher_pun.test.sentences.errors.txt --sentences-file yi.teacher_pun.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file yi.teacher_ace.test.sentences.errors.txt --sentences-file yi.teacher_ace.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file yi.teacher_sin.test.sentences.errors.txt --sentences-file yi.teacher_sin.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file yi.teacher_sem.test.sentences.errors.txt --sentences-file yi.teacher_sem.test.sentences.txt

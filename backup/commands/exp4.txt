@@ -1,0 +1,96 @@
+# Shipibo-Konibo
+
+python3 evaluator.py --language shi --task-name phongrafamb_teacher_general --sentences-errors-file shi.teacher_fon.test.sentences.errors.txt --sentences-file shi.teacher_fon.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_teacher_general --sentences-errors-file shi.teacher_gen.test.sentences.errors.txt --sentences-file shi.teacher_gen.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_teacher_general --sentences-errors-file shi.teacher_tie.test.sentences.errors.txt --sentences-file shi.teacher_tie.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_teacher_general --sentences-errors-file shi.teacher_num.test.sentences.errors.txt --sentences-file shi.teacher_num.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_teacher_general --sentences-errors-file shi.teacher_pun.test.sentences.errors.txt --sentences-file shi.teacher_pun.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_teacher_general --sentences-errors-file shi.teacher_ace.test.sentences.errors.txt --sentences-file shi.teacher_ace.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_teacher_general --sentences-errors-file shi.teacher_sin.test.sentences.errors.txt --sentences-file shi.teacher_sin.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_teacher_general --sentences-errors-file shi.teacher_sem.test.sentences.errors.txt --sentences-file shi.teacher_sem.test.sentences.txt
+
+
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_fon.test.sentences.errors.txt --sentences-file shi.teacher_fon.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_gen.test.sentences.errors.txt --sentences-file shi.teacher_gen.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_tie.test.sentences.errors.txt --sentences-file shi.teacher_tie.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_num.test.sentences.errors.txt --sentences-file shi.teacher_num.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_pun.test.sentences.errors.txt --sentences-file shi.teacher_pun.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_ace.test.sentences.errors.txt --sentences-file shi.teacher_ace.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_sin.test.sentences.errors.txt --sentences-file shi.teacher_sin.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.teacher_sem.test.sentences.errors.txt --sentences-file shi.teacher_sem.test.sentences.txt
+
+
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_fon.test.sentences.errors.txt --sentences-file shi.teacher_fon.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_gen.test.sentences.errors.txt --sentences-file shi.teacher_gen.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_tie.test.sentences.errors.txt --sentences-file shi.teacher_tie.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_num.test.sentences.errors.txt --sentences-file shi.teacher_num.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_pun.test.sentences.errors.txt --sentences-file shi.teacher_pun.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_ace.test.sentences.errors.txt --sentences-file shi.teacher_ace.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_sin.test.sentences.errors.txt --sentences-file shi.teacher_sin.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_sem.test.sentences.errors.txt --sentences-file shi.teacher_sem.test.sentences.txt
+
+
+
+# Asháninka
+
+python3 evaluator.py --language ash --task-name phongrafamb_teacher_general --sentences-errors-file ash.teacher_fon.test.sentences.errors.txt --sentences-file ash.teacher_fon.test.sentences.txt
+python3 evaluator.py --language ash --task-name phongrafamb_teacher_general --sentences-errors-file ash.teacher_gen.test.sentences.errors.txt --sentences-file ash.teacher_gen.test.sentences.txt
+python3 evaluator.py --language ash --task-name phongrafamb_teacher_general --sentences-errors-file ash.teacher_tie.test.sentences.errors.txt --sentences-file ash.teacher_tie.test.sentences.txt
+python3 evaluator.py --language ash --task-name phongrafamb_teacher_general --sentences-errors-file ash.teacher_num.test.sentences.errors.txt --sentences-file ash.teacher_num.test.sentences.txt
+python3 evaluator.py --language ash --task-name phongrafamb_teacher_general --sentences-errors-file ash.teacher_pun.test.sentences.errors.txt --sentences-file ash.teacher_pun.test.sentences.txt
+# python3 evaluator.py --language ash --task-name phongrafamb_teacher_general --sentences-errors-file ash.teacher_ace.test.sentences.errors.txt --sentences-file ash.teacher_ace.test.sentences.txt
+python3 evaluator.py --language ash --task-name phongrafamb_teacher_general --sentences-errors-file ash.teacher_sin.test.sentences.errors.txt --sentences-file ash.teacher_sin.test.sentences.txt
+python3 evaluator.py --language ash --task-name phongrafamb_teacher_general --sentences-errors-file ash.teacher_sem.test.sentences.errors.txt --sentences-file ash.teacher_sem.test.sentences.txt
+
+
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_fon.test.sentences.errors.txt --sentences-file ash.teacher_fon.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_gen.test.sentences.errors.txt --sentences-file ash.teacher_gen.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_tie.test.sentences.errors.txt --sentences-file ash.teacher_tie.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_num.test.sentences.errors.txt --sentences-file ash.teacher_num.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_pun.test.sentences.errors.txt --sentences-file ash.teacher_pun.test.sentences.txt
+# python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_ace.test.sentences.errors.txt --sentences-file ash.teacher_ace.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_sin.test.sentences.errors.txt --sentences-file ash.teacher_sin.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.teacher_sem.test.sentences.errors.txt --sentences-file ash.teacher_sem.test.sentences.txt
+
+
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_fon.test.sentences.errors.txt --sentences-file ash.teacher_fon.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_gen.test.sentences.errors.txt --sentences-file ash.teacher_gen.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_tie.test.sentences.errors.txt --sentences-file ash.teacher_tie.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_num.test.sentences.errors.txt --sentences-file ash.teacher_num.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_pun.test.sentences.errors.txt --sentences-file ash.teacher_pun.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file ash.teacher_ace.test.sentences.errors.txt --sentences-file ash.teacher_ace.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_sin.test.sentences.errors.txt --sentences-file ash.teacher_sin.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_sem.test.sentences.errors.txt --sentences-file ash.teacher_sem.test.sentences.txt
+
+
+
+# Shipibo-Konibo
+
+python3 evaluator.py --language ya --task-name phongrafamb_teacher_general --sentences-errors-file ya.teacher_fon.test.sentences.errors.txt --sentences-file ya.teacher_fon.test.sentences.txt
+# python3 evaluator.py --language ya --task-name phongrafamb_teacher_general --sentences-errors-file ya.teacher_gen.test.sentences.errors.txt --sentences-file ya.teacher_gen.test.sentences.txt
+# python3 evaluator.py --language ya --task-name phongrafamb_teacher_general --sentences-errors-file ya.teacher_tie.test.sentences.errors.txt --sentences-file ya.teacher_tie.test.sentences.txt
+python3 evaluator.py --language ya --task-name phongrafamb_teacher_general --sentences-errors-file ya.teacher_num.test.sentences.errors.txt --sentences-file ya.teacher_num.test.sentences.txt
+python3 evaluator.py --language ya --task-name phongrafamb_teacher_general --sentences-errors-file ya.teacher_pun.test.sentences.errors.txt --sentences-file ya.teacher_pun.test.sentences.txt
+python3 evaluator.py --language ya --task-name phongrafamb_teacher_general --sentences-errors-file ya.teacher_ace.test.sentences.errors.txt --sentences-file ya.teacher_ace.test.sentences.txt
+python3 evaluator.py --language ya --task-name phongrafamb_teacher_general --sentences-errors-file ya.teacher_sin.test.sentences.errors.txt --sentences-file ya.teacher_sin.test.sentences.txt
+# python3 evaluator.py --language ya --task-name phongrafamb_teacher_general --sentences-errors-file ya.teacher_sem.test.sentences.errors.txt --sentences-file ya.teacher_sem.test.sentences.txt
+
+
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_fon.test.sentences.errors.txt --sentences-file ya.teacher_fon.test.sentences.txt
+# python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_gen.test.sentences.errors.txt --sentences-file ya.teacher_gen.test.sentences.txt
+# python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_tie.test.sentences.errors.txt --sentences-file ya.teacher_tie.test.sentences.txt
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_num.test.sentences.errors.txt --sentences-file ya.teacher_num.test.sentences.txt
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_pun.test.sentences.errors.txt --sentences-file ya.teacher_pun.test.sentences.txt
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_ace.test.sentences.errors.txt --sentences-file ya.teacher_ace.test.sentences.txt
+python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_sin.test.sentences.errors.txt --sentences-file ya.teacher_sin.test.sentences.txt
+# python3 evaluator.py --language ya --task-name unnorm_teacher_general --sentences-errors-file ya.teacher_sem.test.sentences.errors.txt --sentences-file ya.teacher_sem.test.sentences.txt
+
+
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_fon.test.sentences.errors.txt --sentences-file ya.teacher_fon.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file ya.teacher_gen.test.sentences.errors.txt --sentences-file ya.teacher_gen.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file ya.teacher_tie.test.sentences.errors.txt --sentences-file ya.teacher_tie.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_num.test.sentences.errors.txt --sentences-file ya.teacher_num.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_pun.test.sentences.errors.txt --sentences-file ya.teacher_pun.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_ace.test.sentences.errors.txt --sentences-file ya.teacher_ace.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_sin.test.sentences.errors.txt --sentences-file ya.teacher_sin.test.sentences.txt
+# python3 chrF_evaluator.py --sentences-errors-file ya.teacher_sem.test.sentences.errors.txt --sentences-file ya.teacher_sem.test.sentences.txt

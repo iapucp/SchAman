@@ -1,0 +1,54 @@
+# Shipibo-Konibo
+
+python3 train.py --language shi --task-name random_teacher_general --vocab-size 4999 --model-name shi_random_teacher_general_4999_100_32 --train-sentences-errors-file shi.random_teacher_general.train.sentences.errors.txt --train-sentences-file shi.random_teacher_general.train.sentences.txt --val-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --val-sentences-file shi.teacher_unnorm.test.sentences.txt --test-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --test-sentences-file shi.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language shi --task-name keyprox_teacher_general --vocab-size 4999 --model-name shi_keyprox_teacher_general_4999_100_32 --train-sentences-errors-file shi.keyprox_teacher_general.train.sentences.errors.txt --train-sentences-file shi.keyprox_teacher_general.train.sentences.txt --val-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --val-sentences-file shi.teacher_unnorm.test.sentences.txt --test-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --test-sentences-file shi.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language shi --task-name phongrafamb_teacher_general --vocab-size 4999 --model-name shi_phongrafamb_teacher_general_4999_100_32 --train-sentences-errors-file shi.phongrafamb_teacher_general.train.sentences.errors.txt --train-sentences-file shi.phongrafamb_teacher_general.train.sentences.txt --val-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --val-sentences-file shi.teacher_unnorm.test.sentences.txt --test-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --test-sentences-file shi.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language shi --task-name sylsim_teacher_general --vocab-size 4999 --model-name shi_sylsim_teacher_general_4999_100_32 --train-sentences-errors-file shi.sylsim_teacher_general.train.sentences.errors.txt --train-sentences-file shi.sylsim_teacher_general.train.sentences.txt --val-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --val-sentences-file shi.teacher_unnorm.test.sentences.txt --test-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --test-sentences-file shi.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language shi --task-name unnorm_teacher_general --vocab-size 4999 --model-name shi_unnorm_teacher_general_4999_100_32 --train-sentences-errors-file shi.unnorm_teacher_general.train.sentences.errors.txt --train-sentences-file shi.unnorm_teacher_general.train.sentences.txt --val-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --val-sentences-file shi.teacher_unnorm.test.sentences.txt --test-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --test-sentences-file shi.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language shi --task-name all_teacher_general --vocab-size 4999 --model-name shi_all_teacher_general_4999_100_32 --train-sentences-errors-file shi.all_teacher_general.train.sentences.errors.txt --train-sentences-file shi.all_teacher_general.train.sentences.txt --val-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --val-sentences-file shi.teacher_unnorm.test.sentences.txt --test-sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --test-sentences-file shi.teacher_unnorm.test.sentences.txt --metric chrF
+
+
+python3 chrF_evaluator.py --sentences-errors-file shi.teacher_unnorm.test.sentences.errors.txt --sentences-file shi.teacher_unnorm.test.sentences.txt
+
+
+
+# Asháninka
+
+python3 train.py --language ash --task-name random_teacher_general --vocab-size 4999 --model-name ash_random_teacher_general_4999_100_32 --train-sentences-errors-file ash.random_teacher_general.train.sentences.errors.txt --train-sentences-file ash.random_teacher_general.train.sentences.txt --val-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ash.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ash.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language ash --task-name keyprox_teacher_general --vocab-size 4999 --model-name ash_keyprox_teacher_general_4999_100_32 --train-sentences-errors-file ash.keyprox_teacher_general.train.sentences.errors.txt --train-sentences-file ash.keyprox_teacher_general.train.sentences.txt --val-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ash.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ash.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language ash --task-name phongrafamb_teacher_general --vocab-size 4999 --model-name ash_phongrafamb_teacher_general_4999_100_32 --train-sentences-errors-file ash.phongrafamb_teacher_general.train.sentences.errors.txt --train-sentences-file ash.phongrafamb_teacher_general.train.sentences.txt --val-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ash.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ash.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language ash --task-name sylsim_teacher_general --vocab-size 4999 --model-name ash_sylsim_teacher_general_4999_100_32 --train-sentences-errors-file ash.sylsim_teacher_general.train.sentences.errors.txt --train-sentences-file ash.sylsim_teacher_general.train.sentences.txt --val-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ash.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ash.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language ash --task-name unnorm_teacher_general --vocab-size 4999 --model-name ash_unnorm_teacher_general_4999_100_32 --train-sentences-errors-file ash.unnorm_teacher_general.train.sentences.errors.txt --train-sentences-file ash.unnorm_teacher_general.train.sentences.txt --val-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ash.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ash.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language ash --task-name all_teacher_general --vocab-size 4999 --model-name ash_all_teacher_general_4999_100_32 --train-sentences-errors-file ash.all_teacher_general.train.sentences.errors.txt --train-sentences-file ash.all_teacher_general.train.sentences.txt --val-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ash.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ash.teacher_unnorm.test.sentences.txt --metric chrF
+
+
+python3 chrF_evaluator.py --sentences-errors-file ash.teacher_unnorm.test.sentences.errors.txt --sentences-file ash.teacher_unnorm.test.sentences.txt
+
+
+
+# Yanesha
+
+python3 train.py --language ya --task-name random_teacher_general --vocab-size 4999 --model-name ya_random_teacher_general_4999_100_32 --train-sentences-errors-file ya.random_teacher_general.train.sentences.errors.txt --train-sentences-file ya.random_teacher_general.train.sentences.txt --val-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ya.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ya.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language ya --task-name keyprox_teacher_general --vocab-size 4999 --model-name ya_keyprox_teacher_general_4999_100_32 --train-sentences-errors-file ya.keyprox_teacher_general.train.sentences.errors.txt --train-sentences-file ya.keyprox_teacher_general.train.sentences.txt --val-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ya.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ya.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language ya --task-name phongrafamb_teacher_general --vocab-size 4999 --model-name ya_phongrafamb_teacher_general_4999_100_32 --train-sentences-errors-file ya.phongrafamb_teacher_general.train.sentences.errors.txt --train-sentences-file ya.phongrafamb_teacher_general.train.sentences.txt --val-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ya.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ya.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language ya --task-name sylsim_teacher_general --vocab-size 4999 --model-name ya_sylsim_teacher_general_4999_100_32 --train-sentences-errors-file ya.sylsim_teacher_general.train.sentences.errors.txt --train-sentences-file ya.sylsim_teacher_general.train.sentences.txt --val-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ya.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ya.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language ya --task-name unnorm_teacher_general --vocab-size 4999 --model-name ya_unnorm_teacher_general_4999_100_32 --train-sentences-errors-file ya.unnorm_teacher_general.train.sentences.errors.txt --train-sentences-file ya.unnorm_teacher_general.train.sentences.txt --val-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ya.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ya.teacher_unnorm.test.sentences.txt --metric chrF
+
+python3 train.py --language ya --task-name all_teacher_general --vocab-size 4999 --model-name ya_all_teacher_general_4999_100_32 --train-sentences-errors-file ya.all_teacher_general.train.sentences.errors.txt --train-sentences-file ya.all_teacher_general.train.sentences.txt --val-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --val-sentences-file ya.teacher_unnorm.test.sentences.txt --test-sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --test-sentences-file ya.teacher_unnorm.test.sentences.txt --metric chrF
+
+
+python3 chrF_evaluator.py --sentences-errors-file ya.teacher_unnorm.test.sentences.errors.txt --sentences-file ya.teacher_unnorm.test.sentences.txt

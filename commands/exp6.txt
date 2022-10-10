@@ -1,0 +1,27 @@
+# Shipibo-Konibo
+
+python3 evaluator.py --language shi --task-name random_teacher_general --sentences-errors-file shi.translationese.test.sentences.errors.txt --sentences-file shi.translationese.test.sentences.txt
+python3 evaluator.py --language shi --task-name keyprox_teacher_general --sentences-errors-file shi.translationese.test.sentences.errors.txt --sentences-file shi.translationese.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_teacher_general --sentences-errors-file shi.translationese.test.sentences.errors.txt --sentences-file shi.translationese.test.sentences.txt
+python3 evaluator.py --language shi --task-name sylsim_teacher_general --sentences-errors-file shi.translationese.test.sentences.errors.txt --sentences-file shi.translationese.test.sentences.txt
+python3 evaluator.py --language shi --task-name unnorm_teacher_general --sentences-errors-file shi.translationese.test.sentences.errors.txt --sentences-file shi.translationese.test.sentences.txt
+python3 evaluator.py --language shi --task-name phongrafamb_unnorm_teacher_general --sentences-errors-file shi.translationese.test.sentences.errors.txt --sentences-file shi.translationese.test.sentences.txt
+python3 evaluator.py --language shi --task-name all_teacher_general --sentences-errors-file shi.translationese.test.sentences.errors.txt --sentences-file shi.translationese.test.sentences.txt
+python3 ensemble.py --language shi --test-sentences-errors-file shi.translationese.test.sentences.errors.txt --test-sentences-file shi.translationese.test.sentences.txt
+
+python3 chrF_evaluator.py --sentences-errors-file shi.translationese.test.sentences.errors.txt --sentences-file shi.translationese.test.sentences.txt
+
+
+
+# Asháninka
+
+python3 evaluator.py --language ash --task-name random_teacher_general --sentences-errors-file ash.translationese.test.sentences.errors.txt --sentences-file ash.translationese.test.sentences.txt
+python3 evaluator.py --language ash --task-name keyprox_teacher_general --sentences-errors-file ash.translationese.test.sentences.errors.txt --sentences-file ash.translationese.test.sentences.txt
+python3 evaluator.py --language ash --task-name phongrafamb_teacher_general --sentences-errors-file ash.translationese.test.sentences.errors.txt --sentences-file ash.translationese.test.sentences.txt
+python3 evaluator.py --language ash --task-name sylsim_teacher_general --sentences-errors-file ash.translationese.test.sentences.errors.txt --sentences-file ash.translationese.test.sentences.txt
+python3 evaluator.py --language ash --task-name unnorm_teacher_general --sentences-errors-file ash.translationese.test.sentences.errors.txt --sentences-file ash.translationese.test.sentences.txt
+python3 evaluator.py --language ash --task-name phongrafamb_unnorm_teacher_general --sentences-errors-file ash.translationese.test.sentences.errors.txt --sentences-file ash.translationese.test.sentences.txt
+python3 evaluator.py --language ash --task-name all_teacher_general --sentences-errors-file ash.translationese.test.sentences.errors.txt --sentences-file ash.translationese.test.sentences.txt
+python3 ensemble.py --language ash --test-sentences-errors-file ash.translationese.test.sentences.errors.txt --test-sentences-file ash.translationese.test.sentences.txt
+
+python3 chrF_evaluator.py --sentences-errors-file ash.translationese.test.sentences.errors.txt --sentences-file ash.translationese.test.sentences.txt

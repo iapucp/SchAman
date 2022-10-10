@@ -1,0 +1,130 @@
+# Shipibo
+
+python3 train.py --language shi --task-name random --vocab-size 4999 --model-name shi_random_4999_100_32 --train-sentences-errors-file shi.random.train.sentences.errors.txt --train-sentences-file shi.random.train.sentences.txt --val-sentences-errors-file shi.random.val.sentences.errors.txt --val-sentences-file shi.random.val.sentences.txt --test-sentences-errors-file shi.random.test.sentences.errors.txt --test-sentences-file shi.random.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file shi.random.test.sentences.errors.txt --sentences-file shi.random.test.sentences.txt
+python3 generate_output.py --language shi --task-name random --sentences-errors-file shi.random.test.sentences.errors.txt --sentences-predictions-file shi.random.test.sentences.predictions.txt
+
+python3 train.py --language shi --task-name keyprox --vocab-size 4999 --model-name shi_keyprox_4999_100_32 --train-sentences-errors-file shi.keyprox.train.sentences.errors.txt --train-sentences-file shi.keyprox.train.sentences.txt --val-sentences-errors-file shi.keyprox.val.sentences.errors.txt --val-sentences-file shi.keyprox.val.sentences.txt --test-sentences-errors-file shi.keyprox.test.sentences.errors.txt --test-sentences-file shi.keyprox.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file shi.keyprox.test.sentences.errors.txt --sentences-file shi.keyprox.test.sentences.txt
+python3 generate_output.py --language shi --task-name keyprox --sentences-errors-file shi.keyprox.test.sentences.errors.txt --sentences-predictions-file shi.keyprox.test.sentences.predictions.txt
+
+python3 train.py --language shi --task-name phongrafamb --vocab-size 4999 --model-name shi_phongrafamb_4999_100_32 --train-sentences-errors-file shi.phongrafamb.train.sentences.errors.txt --train-sentences-file shi.phongrafamb.train.sentences.txt --val-sentences-errors-file shi.phongrafamb.val.sentences.errors.txt --val-sentences-file shi.phongrafamb.val.sentences.txt --test-sentences-errors-file shi.phongrafamb.test.sentences.errors.txt --test-sentences-file shi.phongrafamb.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file shi.phongrafamb.test.sentences.errors.txt --sentences-file shi.phongrafamb.test.sentences.txt
+python3 generate_output.py --language shi --task-name phongrafamb --sentences-errors-file shi.phongrafamb.test.sentences.errors.txt --sentences-predictions-file shi.phongrafamb.test.sentences.predictions.txt
+
+python3 train.py --language shi --task-name sylsim --vocab-size 4999 --model-name shi_sylsim_4999_100_32 --train-sentences-errors-file shi.sylsim.train.sentences.errors.txt --train-sentences-file shi.sylsim.train.sentences.txt --val-sentences-errors-file shi.sylsim.val.sentences.errors.txt --val-sentences-file shi.sylsim.val.sentences.txt --test-sentences-errors-file shi.sylsim.test.sentences.errors.txt --test-sentences-file shi.sylsim.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file shi.sylsim.test.sentences.errors.txt --sentences-file shi.sylsim.test.sentences.txt
+python3 generate_output.py --language shi --task-name sylsim --sentences-errors-file shi.sylsim.test.sentences.errors.txt --sentences-predictions-file shi.sylsim.test.sentences.predictions.txt
+
+python3 train.py --language shi --task-name unnorm --vocab-size 4999 --model-name shi_unnorm_4999_100_32 --train-sentences-errors-file shi.unnorm.train.sentences.errors.txt --train-sentences-file shi.unnorm.train.sentences.txt --val-sentences-errors-file shi.unnorm.val.sentences.errors.txt --val-sentences-file shi.unnorm.val.sentences.txt --test-sentences-errors-file shi.unnorm.test.sentences.errors.txt --test-sentences-file shi.unnorm.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file shi.unnorm.test.sentences.errors.txt --sentences-file shi.unnorm.test.sentences.txt
+python3 generate_output.py --language shi --task-name unnorm --sentences-errors-file shi.unnorm.test.sentences.errors.txt --sentences-predictions-file shi.unnorm.test.sentences.predictions.txt
+
+python3 train.py --language shi --task-name phongrafamb_unnorm --vocab-size 4999 --model-name shi_phongrafamb_unnorm_4999_100_32 --train-sentences-errors-file shi.phongrafamb_unnorm.train.sentences.errors.txt --train-sentences-file shi.phongrafamb_unnorm.train.sentences.txt --val-sentences-errors-file shi.phongrafamb_unnorm.val.sentences.errors.txt --val-sentences-file shi.phongrafamb_unnorm.val.sentences.txt --test-sentences-errors-file shi.phongrafamb_unnorm.test.sentences.errors.txt --test-sentences-file shi.phongrafamb_unnorm.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file shi.phongrafamb_unnorm.test.sentences.errors.txt --sentences-file shi.phongrafamb_unnorm.test.sentences.txt
+python3 generate_output.py --language shi --task-name phongrafamb_unnorm --sentences-errors-file shi.phongrafamb_unnorm.test.sentences.errors.txt --sentences-predictions-file shi.phongrafamb_unnorm.test.sentences.predictions.txt
+
+python3 train.py --language shi --task-name all --vocab-size 4999 --model-name shi_all_4999_100_32 --train-sentences-errors-file shi.all.train.sentences.errors.txt --train-sentences-file shi.all.train.sentences.txt --val-sentences-errors-file shi.all.val.sentences.errors.txt --val-sentences-file shi.all.val.sentences.txt --test-sentences-errors-file shi.all.test.sentences.errors.txt --test-sentences-file shi.all.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file shi.all.test.sentences.errors.txt --sentences-file shi.all.test.sentences.txt
+python3 generate_output.py --language shi --task-name all --sentences-errors-file shi.all.test.sentences.errors.txt --sentences-predictions-file shi.all.test.sentences.predictions.txt
+
+python3 ensemble.py --language shi --test-sentences-errors-file shi.all.test.sentences.errors.txt --test-sentences-file shi.all.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file shi.all.test.sentences.errors.txt --sentences-file shi.all.test.sentences.txt
+python3 generate_output_ensemble.py --language shi --sentences-errors-file shi.all.test.sentences.errors.txt --sentences-predictions-file shi.all_ensemble.test.sentences.predictions.txt
+
+
+# Asháninka
+
+python3 train.py --language ash --task-name random --vocab-size 4999 --model-name ash_random_4999_100_32 --train-sentences-errors-file ash.random.train.sentences.errors.txt --train-sentences-file ash.random.train.sentences.txt --val-sentences-errors-file ash.random.val.sentences.errors.txt --val-sentences-file ash.random.val.sentences.txt --test-sentences-errors-file ash.random.test.sentences.errors.txt --test-sentences-file ash.random.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ash.random.test.sentences.errors.txt --sentences-file ash.random.test.sentences.txt
+python3 generate_output.py --language ash --task-name random --sentences-errors-file ash.random.test.sentences.errors.txt --sentences-predictions-file ash.random.test.sentences.predictions.txt
+
+python3 train.py --language ash --task-name keyprox --vocab-size 4999 --model-name ash_keyprox_4999_100_32 --train-sentences-errors-file ash.keyprox.train.sentences.errors.txt --train-sentences-file ash.keyprox.train.sentences.txt --val-sentences-errors-file ash.keyprox.val.sentences.errors.txt --val-sentences-file ash.keyprox.val.sentences.txt --test-sentences-errors-file ash.keyprox.test.sentences.errors.txt --test-sentences-file ash.keyprox.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ash.keyprox.test.sentences.errors.txt --sentences-file ash.keyprox.test.sentences.txt
+python3 generate_output.py --language ash --task-name keyprox --sentences-errors-file ash.keyprox.test.sentences.errors.txt --sentences-predictions-file ash.keyprox.test.sentences.predictions.txt
+
+python3 train.py --language ash --task-name phongrafamb --vocab-size 4999 --model-name ash_phongrafamb_4999_100_32 --train-sentences-errors-file ash.phongrafamb.train.sentences.errors.txt --train-sentences-file ash.phongrafamb.train.sentences.txt --val-sentences-errors-file ash.phongrafamb.val.sentences.errors.txt --val-sentences-file ash.phongrafamb.val.sentences.txt --test-sentences-errors-file ash.phongrafamb.test.sentences.errors.txt --test-sentences-file ash.phongrafamb.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ash.phongrafamb.test.sentences.errors.txt --sentences-file ash.phongrafamb.test.sentences.txt
+python3 generate_output.py --language ash --task-name phongrafamb --sentences-errors-file ash.phongrafamb.test.sentences.errors.txt --sentences-predictions-file ash.phongrafamb.test.sentences.predictions.txt
+
+python3 train.py --language ash --task-name sylsim --vocab-size 4999 --model-name ash_sylsim_4999_100_32 --train-sentences-errors-file ash.sylsim.train.sentences.errors.txt --train-sentences-file ash.sylsim.train.sentences.txt --val-sentences-errors-file ash.sylsim.val.sentences.errors.txt --val-sentences-file ash.sylsim.val.sentences.txt --test-sentences-errors-file ash.sylsim.test.sentences.errors.txt --test-sentences-file ash.sylsim.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ash.sylsim.test.sentences.errors.txt --sentences-file ash.sylsim.test.sentences.txt
+python3 generate_output.py --language ash --task-name sylsim --sentences-errors-file ash.sylsim.test.sentences.errors.txt --sentences-predictions-file ash.sylsim.test.sentences.predictions.txt
+
+python3 train.py --language ash --task-name unnorm --vocab-size 4999 --model-name ash_unnorm_4999_100_32 --train-sentences-errors-file ash.unnorm.train.sentences.errors.txt --train-sentences-file ash.unnorm.train.sentences.txt --val-sentences-errors-file ash.unnorm.val.sentences.errors.txt --val-sentences-file ash.unnorm.val.sentences.txt --test-sentences-errors-file ash.unnorm.test.sentences.errors.txt --test-sentences-file ash.unnorm.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ash.unnorm.test.sentences.errors.txt --sentences-file ash.unnorm.test.sentences.txt
+python3 generate_output.py --language ash --task-name unnorm --sentences-errors-file ash.unnorm.test.sentences.errors.txt --sentences-predictions-file ash.unnorm.test.sentences.predictions.txt
+
+python3 train.py --language ash --task-name phongrafamb_unnorm --vocab-size 4999 --model-name ash_phongrafamb_unnorm_4999_100_32 --train-sentences-errors-file ash.phongrafamb_unnorm.train.sentences.errors.txt --train-sentences-file ash.phongrafamb_unnorm.train.sentences.txt --val-sentences-errors-file ash.phongrafamb_unnorm.val.sentences.errors.txt --val-sentences-file ash.phongrafamb_unnorm.val.sentences.txt --test-sentences-errors-file ash.phongrafamb_unnorm.test.sentences.errors.txt --test-sentences-file ash.phongrafamb_unnorm.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ash.phongrafamb_unnorm.test.sentences.errors.txt --sentences-file ash.phongrafamb_unnorm.test.sentences.txt
+python3 generate_output.py --language ash --task-name phongrafamb_unnorm --sentences-errors-file ash.phongrafamb_unnorm.test.sentences.errors.txt --sentences-predictions-file ash.phongrafamb_unnorm.test.sentences.predictions.txt
+
+python3 train.py --language ash --task-name all --vocab-size 4999 --model-name ash_all_4999_100_32 --train-sentences-errors-file ash.all.train.sentences.errors.txt --train-sentences-file ash.all.train.sentences.txt --val-sentences-errors-file ash.all.val.sentences.errors.txt --val-sentences-file ash.all.val.sentences.txt --test-sentences-errors-file ash.all.test.sentences.errors.txt --test-sentences-file ash.all.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ash.all.test.sentences.errors.txt --sentences-file ash.all.test.sentences.txt
+python3 generate_output.py --language ash --task-name all --sentences-errors-file ash.all.test.sentences.errors.txt --sentences-predictions-file ash.all.test.sentences.predictions.txt
+
+python3 ensemble.py --language ash --test-sentences-errors-file ash.all.test.sentences.errors.txt --test-sentences-file ash.all.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ash.all.test.sentences.errors.txt --sentences-file ash.all.test.sentences.txt
+python3 generate_output_ensemble.py --language ash --sentences-errors-file ash.all.test.sentences.errors.txt --sentences-predictions-file ash.all_ensemble.test.sentences.predictions.txt
+
+
+# Yanesha
+
+python3 train.py --language ya --task-name random --vocab-size 4999 --model-name ya_random_4999_100_32 --train-sentences-errors-file ya.random.train.sentences.errors.txt --train-sentences-file ya.random.train.sentences.txt --val-sentences-errors-file ya.random.val.sentences.errors.txt --val-sentences-file ya.random.val.sentences.txt --test-sentences-errors-file ya.random.test.sentences.errors.txt --test-sentences-file ya.random.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ya.random.test.sentences.errors.txt --sentences-file ya.random.test.sentences.txt
+python3 generate_output.py --language ya --task-name random --sentences-errors-file ya.random.test.sentences.errors.txt --sentences-predictions-file ya.random.test.sentences.predictions.txt
+
+python3 train.py --language ya --task-name keyprox --vocab-size 4999 --model-name ya_keyprox_4999_100_32 --train-sentences-errors-file ya.keyprox.train.sentences.errors.txt --train-sentences-file ya.keyprox.train.sentences.txt --val-sentences-errors-file ya.keyprox.val.sentences.errors.txt --val-sentences-file ya.keyprox.val.sentences.txt --test-sentences-errors-file ya.keyprox.test.sentences.errors.txt --test-sentences-file ya.keyprox.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ya.keyprox.test.sentences.errors.txt --sentences-file ya.keyprox.test.sentences.txt
+python3 generate_output.py --language ya --task-name keyprox --sentences-errors-file ya.keyprox.test.sentences.errors.txt --sentences-predictions-file ya.keyprox.test.sentences.predictions.txt
+
+python3 train.py --language ya --task-name phongrafamb --vocab-size 4999 --model-name ya_phongrafamb_4999_100_32 --train-sentences-errors-file ya.phongrafamb.train.sentences.errors.txt --train-sentences-file ya.phongrafamb.train.sentences.txt --val-sentences-errors-file ya.phongrafamb.val.sentences.errors.txt --val-sentences-file ya.phongrafamb.val.sentences.txt --test-sentences-errors-file ya.phongrafamb.test.sentences.errors.txt --test-sentences-file ya.phongrafamb.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ya.phongrafamb.test.sentences.errors.txt --sentences-file ya.phongrafamb.test.sentences.txt
+python3 generate_output.py --language ya --task-name phongrafamb --sentences-errors-file ya.phongrafamb.test.sentences.errors.txt --sentences-predictions-file ya.phongrafamb.test.sentences.predictions.txt
+
+python3 train.py --language ya --task-name sylsim --vocab-size 4999 --model-name ya_sylsim_4999_100_32 --train-sentences-errors-file ya.sylsim.train.sentences.errors.txt --train-sentences-file ya.sylsim.train.sentences.txt --val-sentences-errors-file ya.sylsim.val.sentences.errors.txt --val-sentences-file ya.sylsim.val.sentences.txt --test-sentences-errors-file ya.sylsim.test.sentences.errors.txt --test-sentences-file ya.sylsim.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ya.sylsim.test.sentences.errors.txt --sentences-file ya.sylsim.test.sentences.txt
+python3 generate_output.py --language ya --task-name sylsim --sentences-errors-file ya.sylsim.test.sentences.errors.txt --sentences-predictions-file ya.sylsim.test.sentences.predictions.txt
+
+python3 train.py --language ya --task-name unnorm --vocab-size 4999 --model-name ya_unnorm_4999_100_32 --train-sentences-errors-file ya.unnorm.train.sentences.errors.txt --train-sentences-file ya.unnorm.train.sentences.txt --val-sentences-errors-file ya.unnorm.val.sentences.errors.txt --val-sentences-file ya.unnorm.val.sentences.txt --test-sentences-errors-file ya.unnorm.test.sentences.errors.txt --test-sentences-file ya.unnorm.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ya.unnorm.test.sentences.errors.txt --sentences-file ya.unnorm.test.sentences.txt
+python3 generate_output.py --language ya --task-name unnorm --sentences-errors-file ya.unnorm.test.sentences.errors.txt --sentences-predictions-file ya.unnorm.test.sentences.predictions.txt
+
+python3 train.py --language ya --task-name phongrafamb_unnorm --vocab-size 4999 --model-name ya_phongrafamb_unnorm_4999_100_32 --train-sentences-errors-file ya.phongrafamb_unnorm.train.sentences.errors.txt --train-sentences-file ya.phongrafamb_unnorm.train.sentences.txt --val-sentences-errors-file ya.phongrafamb_unnorm.val.sentences.errors.txt --val-sentences-file ya.phongrafamb_unnorm.val.sentences.txt --test-sentences-errors-file ya.phongrafamb_unnorm.test.sentences.errors.txt --test-sentences-file ya.phongrafamb_unnorm.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ya.phongrafamb_unnorm.test.sentences.errors.txt --sentences-file ya.phongrafamb_unnorm.test.sentences.txt
+python3 generate_output.py --language ya --task-name phongrafamb_unnorm --sentences-errors-file ya.phongrafamb_unnorm.test.sentences.errors.txt --sentences-predictions-file ya.phongrafamb_unnorm.test.sentences.predictions.txt
+
+python3 train.py --language ya --task-name all --vocab-size 4999 --model-name ya_all_4999_100_32 --train-sentences-errors-file ya.all.train.sentences.errors.txt --train-sentences-file ya.all.train.sentences.txt --val-sentences-errors-file ya.all.val.sentences.errors.txt --val-sentences-file ya.all.val.sentences.txt --test-sentences-errors-file ya.all.test.sentences.errors.txt --test-sentences-file ya.all.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file ya.all.test.sentences.errors.txt --sentences-file ya.all.test.sentences.txt
+python3 generate_output.py --language ya --task-name all --sentences-errors-file ya.all.test.sentences.errors.txt --sentences-predictions-file ya.all.test.sentences.predictions.txt
+
+python3 ensemble.py --language ya --test-sentences-errors-file ya.all.test.sentences.errors.txt --test-sentences-file ya.all.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file ya.all.test.sentences.errors.txt --sentences-file ya.all.test.sentences.txt
+python3 generate_output_ensemble.py --language ya --sentences-errors-file ya.all.test.sentences.errors.txt --sentences-predictions-file ya.all_ensemble.test.sentences.predictions.txt
+
+
+# Yine
+
+python3 train.py --language yi --task-name random --vocab-size 2999 --model-name yi_random_2999_100_32 --train-sentences-errors-file yi.random.train.sentences.errors.txt --train-sentences-file yi.random.train.sentences.txt --val-sentences-errors-file yi.random.val.sentences.errors.txt --val-sentences-file yi.random.val.sentences.txt --test-sentences-errors-file yi.random.test.sentences.errors.txt --test-sentences-file yi.random.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file yi.random.test.sentences.errors.txt --sentences-file yi.random.test.sentences.txt
+python3 generate_output.py --language yi --task-name random --sentences-errors-file yi.random.test.sentences.errors.txt --sentences-predictions-file yi.random.test.sentences.predictions.txt
+
+python3 train.py --language yi --task-name keyprox --vocab-size 2999 --model-name yi_keyprox_2999_100_32 --train-sentences-errors-file yi.keyprox.train.sentences.errors.txt --train-sentences-file yi.keyprox.train.sentences.txt --val-sentences-errors-file yi.keyprox.val.sentences.errors.txt --val-sentences-file yi.keyprox.val.sentences.txt --test-sentences-errors-file yi.keyprox.test.sentences.errors.txt --test-sentences-file yi.keyprox.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file yi.keyprox.test.sentences.errors.txt --sentences-file yi.keyprox.test.sentences.txt
+python3 generate_output.py --language yi --task-name keyprox --sentences-errors-file yi.keyprox.test.sentences.errors.txt --sentences-predictions-file yi.keyprox.test.sentences.predictions.txt
+
+python3 train.py --language yi --task-name sylsim --vocab-size 2999 --model-name yi_sylsim_2999_100_32 --train-sentences-errors-file yi.sylsim.train.sentences.errors.txt --train-sentences-file yi.sylsim.train.sentences.txt --val-sentences-errors-file yi.sylsim.val.sentences.errors.txt --val-sentences-file yi.sylsim.val.sentences.txt --test-sentences-errors-file yi.sylsim.test.sentences.errors.txt --test-sentences-file yi.sylsim.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file yi.sylsim.test.sentences.errors.txt --sentences-file yi.sylsim.test.sentences.txt
+python3 generate_output.py --language yi --task-name sylsim --sentences-errors-file yi.sylsim.test.sentences.errors.txt --sentences-predictions-file yi.sylsim.test.sentences.predictions.txt
+
+python3 train.py --language yi --task-name unnorm --vocab-size 2999 --model-name yi_unnorm_2999_100_32 --train-sentences-errors-file yi.unnorm.train.sentences.errors.txt --train-sentences-file yi.unnorm.train.sentences.txt --val-sentences-errors-file yi.unnorm.val.sentences.errors.txt --val-sentences-file yi.unnorm.val.sentences.txt --test-sentences-errors-file yi.unnorm.test.sentences.errors.txt --test-sentences-file yi.unnorm.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file yi.unnorm.test.sentences.errors.txt --sentences-file yi.unnorm.test.sentences.txt
+python3 generate_output.py --language yi --task-name unnorm --sentences-errors-file yi.unnorm.test.sentences.errors.txt --sentences-predictions-file yi.unnorm.test.sentences.predictions.txt
+
+python3 train.py --language yi --task-name all --vocab-size 2999 --model-name yi_all_2999_100_32 --train-sentences-errors-file yi.all.train.sentences.errors.txt --train-sentences-file yi.all.train.sentences.txt --val-sentences-errors-file yi.all.val.sentences.errors.txt --val-sentences-file yi.all.val.sentences.txt --test-sentences-errors-file yi.all.test.sentences.errors.txt --test-sentences-file yi.all.test.sentences.txt --metric chrF
+python3 chrF_evaluator.py --sentences-errors-file yi.all.test.sentences.errors.txt --sentences-file yi.all.test.sentences.txt
+python3 generate_output.py --language yi --task-name all --sentences-errors-file yi.all.test.sentences.errors.txt --sentences-predictions-file yi.all.test.sentences.predictions.txt
+
+python3 ensemble.py --language yi --test-sentences-errors-file yi.all.test.sentences.errors.txt --test-sentences-file yi.all.test.sentences.txt
+python3 chrF_evaluator.py --sentences-errors-file yi.all.test.sentences.errors.txt --sentences-file yi.all.test.sentences.txt
+python3 generate_output_ensemble.py --language yi --sentences-errors-file yi.all.test.sentences.errors.txt --sentences-predictions-file yi.all_ensemble.test.sentences.predictions.txt
